@@ -73,6 +73,8 @@ vim.pack.add {
   'https://github.com/nvim-telescope/telescope.nvim',
   'https://github.com/nvim-lua/plenary.nvim',
   'https://github.com/nvim-telescope/telescope-fzf-native.nvim',
+  --Which key
+  'https://github.com/nvim-mini/mini.icons',
   'https://github.com/folke/which-key.nvim',
   { src = 'https://github.com/neovim/nvim-lspconfig' },
   'https://github.com/ellisonleao/gruvbox.nvim',
