@@ -67,7 +67,7 @@ vim.pack.add {
   -- dependencies
   'https://github.com/nvim-lua/plenary.nvim',
   'https://github.com/MunifTanjim/nui.nvim',
-  -- optional, but recommended
+  -- optional, but recommended | Also needed for lua line now
   'https://github.com/nvim-tree/nvim-web-devicons',
   -- telescope
   'https://github.com/nvim-telescope/telescope.nvim',
@@ -83,7 +83,9 @@ vim.pack.add {
   'https://github.com/mason-org/mason-lspconfig.nvim',
   'https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim',
   --gitsign
-  'https://github.com/lewis6991/gitsigns.nvim'
+  'https://github.com/lewis6991/gitsigns.nvim',
+  --Lua line
+  'https://github.com/nvim-lualine/lualine.nvim',
 }
 
 require('gruvbox').setup()
@@ -97,3 +99,4 @@ require('mason-lspconfig').setup()
 require('mason-tool-installer').setup({
     ensure_installed = {"lua_ls"}
 })
+require('lualine').setup()
