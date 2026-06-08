@@ -101,3 +101,5 @@ require('mason-tool-installer').setup({
     ensure_installed = {"lua_ls"}
 })
 require('lualine').setup()
+vim.opt.termguicolors = true
+-- require('bufferline').setup{}
