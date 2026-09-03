@@ -69,6 +69,8 @@ vim.pack.add {
   'https://github.com/MunifTanjim/nui.nvim',
   -- optional, but recommended | Also needed for lua line now
   'https://github.com/nvim-tree/nvim-web-devicons',
+  -- Treesitter
+  'https://github.com/nvim-treesitter/nvim-treesitter',
   -- telescope
   'https://github.com/nvim-telescope/telescope.nvim',
   'https://github.com/nvim-lua/plenary.nvim',
@@ -79,6 +81,7 @@ vim.pack.add {
   'https://github.com/folke/which-key.nvim',
   { src = 'https://github.com/neovim/nvim-lspconfig' },
   'https://github.com/ellisonleao/gruvbox.nvim',
+  'https://github.com/EdenEast/nightfox.nvim',
   -- Mason
   'https://github.com/mason-org/mason.nvim',
   'https://github.com/mason-org/mason-lspconfig.nvim',
@@ -89,8 +92,8 @@ vim.pack.add {
   'https://github.com/nvim-lualine/lualine.nvim',
 }
 
-require('gruvbox').setup()
-vim.cmd.colorscheme("gruvbox")
+-- require('gruvbox').setup()
+vim.cmd.colorscheme("nightfox")
 
 require('plugins.neotree').setup()
 require('plugins.telescope').setup()
