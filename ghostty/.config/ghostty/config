@@ -1,5 +1,5 @@
 adjust-cell-height = 10%
-background-opacity = 0.9
+background-opacity = 1.00
 confirm-close-surface = false
 cursor-style = block
 font-family = JetBrains Nerd Font Mono
@@ -16,5 +16,5 @@ wait-after-command = false
 window-height = 30
 window-save-state = always
 window-theme = dark
-window-width = 140
+window-width = 130
 theme = Nightfox
