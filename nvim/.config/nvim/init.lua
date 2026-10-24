@@ -39,7 +39,6 @@ end)
 -- Keymaps
 -- ============================================================================
 local map = vim.keymap.set
-
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Quickfix diagnostics' })
 map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
@@ -47,6 +46,7 @@ map('n', '<C-h>', '<C-w><C-h>', { desc = 'Focus left window' })
 map('n', '<C-l>', '<C-w><C-l>', { desc = 'Focus right window' })
 map('n', '<C-j>', '<C-w><C-j>', { desc = 'Focus lower window' })
 map('n', '<C-k>', '<C-w><C-k>', { desc = 'Focus upper window' })
+map('n', '<leader>v', '<cmd>vs<CR>')
 
 -- ============================================================================
 -- Autocommands
@@ -90,6 +90,8 @@ vim.pack.add {
   'https://github.com/lewis6991/gitsigns.nvim',
   --Lua line
   'https://github.com/nvim-lualine/lualine.nvim',
+  'https://github.com/copilotlsp-nvim/copilot-lsp',
+  'https://github.com/zbirenbaum/copilot.lua',
 }
 
 -- require('gruvbox').setup()
@@ -105,4 +107,5 @@ require('mason-tool-installer').setup({
 })
 require('lualine').setup()
 vim.opt.termguicolors = true
+require('plugins.copilot').setup()
 -- require('bufferline').setup{}

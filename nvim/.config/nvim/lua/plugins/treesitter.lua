@@ -25,3 +25,5 @@ function T.setup()
             },
         },
     })
+end
+return T
