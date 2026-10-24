@@ -29,3 +29,11 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/home/steven/.bun/_bun" ] && source "/home/steven/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
